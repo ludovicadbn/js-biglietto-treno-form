@@ -8,9 +8,7 @@
 html{font-family: sans-serif;}
 body{height: 100vh;}
 
-main > div:first-of-type{
-  border-radius: 15px;
-}
+main > div:first-of-type{border-radius: 15px;}
 
 main > div:first-of-type > div{width: 80%; margin: 0 auto;}
 
