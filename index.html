@@ -27,43 +27,45 @@
         </div>
         <div>
           <label for="eta" class="text-pink d-block mb-2">Fascia d'et&#224;</label>
-          <select id="dropdown" name="eta" required>
-            <option value="none"> </option>
-            <option value="under_18">Under 18</option>
-            <option value="disoccupied">Maggiorenne</option>
-            <option value="over_65">Over 65</option>
+          <select id="age" name="eta" required>
+            <option value="u18">Under 18</option>
+            <option value="adult">Maggiorenne</option>
+            <option value="o65">Over 65</option>
           </select>
         </div>
       </div>
       <div class="row jc-center py-3">
-        <button class="bg-gray text-fuchsia fw-bold fs-4 p-1 mr-2">Genera</button>
-        <button class="bg-gray text-fuchsia fw-bold fs-4 p-1">Annulla</button>
+        <button id="genera" class="bg-gray text-fuchsia fw-bold fs-4 p-1 mr-2">Genera</button>
+        <button id="annulla" class="bg-gray text-fuchsia fw-bold fs-4 p-1">Annulla</button>
       </div>
     </div>
     <!-- DA FAR SPARIRE -->
-    <div class="my-2">
+    <div id="ticket" class="my-2 d-none">
       <h2 class="text-white text-uppercase fs-7 text-center my-2">il tuo biglietto</h2>
       <div class="container bg-white">
         <div class="p-2">
           <h3 class="text-uppercase fs-5">dettaglio passeggeri</h3>
           <div class="row details">
-            <div class="col-4 bg-darkgray text-center py-2">
-              <h3 class="text-uppercase fs-5">nome passeggero</h3>
-              <!-- JS -->
-              <span id=""></span>
+            <div class="col-4 bg-darkgray p-2">
+              <h3 class="text-uppercase fs-5 mb-1">nome passeggero</h3>
+              <span id="name" class="fw-bold fs-5"></span>
             </div>
             <div class="col-8 row jc-around py-2">
               <div>
                 <h4 class="mb-4">Offerta</h4>
+                <span id="typeofticket"></span>
               </div>
               <div>
                 <h4 class="mb-4">Carrozza</h4>
+                <span id="carrozza"></span>
               </div>
               <div>
                 <h4 class="mb-4">Codice CP</h4>
+                <span id="cp"></span>
               </div>
               <div>
                 <h4 class="mb-4">Costo biglietto</h4>
+                <span id="price"></span>
               </div>
             </div>
           </div>
