@@ -1,7 +1,28 @@
-/* Richiesta esercizio di ieri 09/03/22
-Il programma dovrà mostrare una form da compilare con cui chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
-Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
-il prezzo del biglietto è definito in base ai km (0.21 € al km)
-va applicato uno sconto del 20% per i minorenni
-va applicato uno sconto del 40% per gli over 65.
-Il recap dei dati e l'output del prezzo finale va stampato in pagina (formattato con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
+.bg-white{background-color: #fff;}
+.bg-darkgray{background-color: #808080;}
+.bg-gray{background-color: #cccccc;}
+.bg-fuchsia{background-color: #b91450;}
+.text-fuchsia{color: #b91450;}
+.text-pink{color: #c02d63;}
+
+html{font-family: sans-serif;}
+body{height: 100vh;}
+
+main > div:first-of-type{
+  border-radius: 15px;
+  /* box-shadow: 1px 1px 10px #000, -1px -1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000 */
+}
+
+main > div:first-of-type > div{width: 80%; margin: 0 auto;}
+
+input,
+select{
+  border-color: #c02d63;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+main button{border-radius: 5px;}
+main button:hover{border: 1px solid #e99850;}
+
+.details{border-top: 1px solid #808080; border-bottom: 1px solid #808080;}

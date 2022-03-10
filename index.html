@@ -8,9 +8,69 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Train ticket</title>
 </head>
-<body>
+<body class="bg-fuchsia">
   
-  
+  <header class="text-center py-3">
+    <h1 class="text-white text-uppercase fs-7">calcola il prezzo del tuo biglietto</h1>
+  </header>
+
+  <main>
+    <div class="container bg-white fw-bold text-center">
+      <div class="row jc-around py-4 fw-bold text-center">
+        <div>
+          <label for="name_surname" class="text-pink d-block mb-2">Nome e Cognome</label>
+          <input type="text" id="name_surname" name="name_surname" placeholder=" John Doe" required>
+        </div>
+        <div>
+          <label for="Km" class="text-pink d-block mb-2">Km da percorrere</label>
+          <input type="number" id="km" name="km" min="0" max="1000" required>
+        </div>
+        <div>
+          <label for="eta" class="text-pink d-block mb-2">Fascia d'et&#224;</label>
+          <select id="dropdown" name="eta" required>
+            <option value="none"> </option>
+            <option value="under_18">Under 18</option>
+            <option value="disoccupied">Maggiorenne</option>
+            <option value="over_65">Over 65</option>
+          </select>
+        </div>
+      </div>
+      <div class="row jc-center py-3">
+        <button class="bg-gray text-fuchsia fw-bold fs-4 p-1 mr-2">Genera</button>
+        <button class="bg-gray text-fuchsia fw-bold fs-4 p-1">Annulla</button>
+      </div>
+    </div>
+    <!-- DA FAR SPARIRE -->
+    <div class="my-2">
+      <h2 class="text-white text-uppercase fs-7 text-center my-2">il tuo biglietto</h2>
+      <div class="container bg-white">
+        <div class="p-2">
+          <h3 class="text-uppercase fs-5">dettaglio passeggeri</h3>
+          <div class="row details">
+            <div class="col-4 bg-darkgray text-center py-2">
+              <h3 class="text-uppercase fs-5">nome passeggero</h3>
+              <!-- JS -->
+              <span id=""></span>
+            </div>
+            <div class="col-8 row jc-around py-2">
+              <div>
+                <h4 class="mb-4">Offerta</h4>
+              </div>
+              <div>
+                <h4 class="mb-4">Carrozza</h4>
+              </div>
+              <div>
+                <h4 class="mb-4">Codice CP</h4>
+              </div>
+              <div>
+                <h4 class="mb-4">Costo biglietto</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
