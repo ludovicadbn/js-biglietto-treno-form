@@ -18,15 +18,15 @@
     <div class="container bg-white fw-bold text-center">
       <div class="row jc-around py-4 fw-bold text-center">
         <div>
-          <label for="name_surname" class="text-pink d-block mb-2">Nome e Cognome</label>
+          <label for="name_surname" class="label text-pink d-block mb-2">Nome e Cognome</label>
           <input type="text" id="name_surname" name="name_surname" placeholder=" John Doe" required>
         </div>
         <div>
-          <label for="Km" class="text-pink d-block mb-2">Km da percorrere</label>
+          <label for="Km" class="label text-pink d-block mb-2">Km da percorrere</label>
           <input type="number" id="km" name="km" min="0" max="1000" required>
         </div>
         <div>
-          <label for="eta" class="text-pink d-block mb-2">Fascia d'et&#224;</label>
+          <label for="eta" class="label text-pink d-block mb-2">Fascia d'et&#224;</label>
           <select id="age" name="eta" required>
             <option value="u18">Under 18</option>
             <option value="adult">Maggiorenne</option>
@@ -46,24 +46,24 @@
         <div class="p-2">
           <h3 class="text-uppercase fs-5">dettaglio passeggeri</h3>
           <div class="row details">
-            <div class="col-4 bg-darkgray p-2">
+            <div class="col-12 col-md-4 bg-darkgray p-2">
               <h3 class="text-uppercase fs-5 mb-1">nome passeggero</h3>
               <span id="name" class="fw-bold fs-5"></span>
             </div>
-            <div class="col-8 row jc-around py-2">
-              <div>
+            <div class="col-sm-12 col-md-8 row jc-around py-2">
+              <div class="dati">
                 <h4 class="mb-4">Offerta</h4>
                 <span id="typeofticket"></span>
               </div>
-              <div>
+              <div class="dati">
                 <h4 class="mb-4">Carrozza</h4>
                 <span id="carrozza"></span>
               </div>
-              <div>
+              <div class="dati">
                 <h4 class="mb-4">Codice CP</h4>
                 <span id="cp"></span>
               </div>
-              <div>
+              <div class="dati">
                 <h4 class="mb-4">Costo biglietto</h4>
                 <span id="price"></span>
               </div>

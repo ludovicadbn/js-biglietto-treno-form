@@ -26,3 +26,11 @@ main button{border-radius: 5px;}
 main button:hover{border: 1px solid #e99850;}
 
 .details{border-top: 1px solid #808080; border-bottom: 1px solid #808080;}
+
+/* small */
+@media screen and (max-width: 35.9em) {
+  .label{margin-top: 1em;}
+
+  .dati{max-width: 50%; flex-basis: 50%;}
+  .dati h4{margin-top: 1em; margin-bottom: 1em;}
+}
