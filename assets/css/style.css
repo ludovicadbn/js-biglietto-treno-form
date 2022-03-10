@@ -10,7 +10,6 @@ body{height: 100vh;}
 
 main > div:first-of-type{
   border-radius: 15px;
-  /* box-shadow: 1px 1px 10px #000, -1px -1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000 */
 }
 
 main > div:first-of-type > div{width: 80%; margin: 0 auto;}
